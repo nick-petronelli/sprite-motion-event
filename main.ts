@@ -222,6 +222,8 @@ mySprite2.setPosition(randint(10, 150), randint(10, 110))
 mySprite3.setPosition(randint(10, 150), randint(10, 110))
 mySprite4.setPosition(randint(10, 150), randint(10, 110))
 info.setLife(3)
+mySprite4.setVelocity(randint(40, 50), randint(40, 50))
+mySprite4.setBounceOnWall(true)
 game.onUpdate(function () {
     if (info.score() >= 100) {
         game.splash(" You Reached 100 Points!!!! You Win, Congrats!! ")
